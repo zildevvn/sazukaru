@@ -1,0 +1,81 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 64px;
+
+
+    .logged-in & {
+        scroll-padding-top: 96px;
+
+        @media screen and (max-width: 782px) {
+            scroll-padding-top: 110px;
+        }
+    }
+}
+
+html,
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #fff;
+    letter-spacing: 0.06em;
+    --bs-body-color: $color-blue;
+    --bs-body-font-family: $font-second;
+    --bs-body-font-size: 16px;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+}
+
+h1 {
+    font-size: 45px;
+    line-height: 1.74;
+    letter-spacing: 0.06em;
+    font-family: $font-quaternary;
+
+    @media (max-width: 1199.98px) {
+        font-size: 40px;
+    }
+
+    @media (max-width: 1023.98px) {
+        font-size: 32px;
+    }
+
+    @media (max-width: 767.98px) {
+        font-size: 30px;
+    }
+}
+
+h2 {
+    font-family: "Noto Serif JP", serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.6;
+    letter-spacing: 0.18em;
+
+    @media (max-width: 1023.98px) {
+        font-size: 26px;
+    }
+
+    @media (max-width: 767.98px) {
+        font-size: 20px;
+        letter-spacing: 0.09em;
+        line-height: 37.5px;
+    }
+}
+
+h3 {
+    font-size: 28px;
+
+    @include media-breakpoint-up(lg) {
+        font-size: 36px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
