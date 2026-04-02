@@ -29,6 +29,50 @@ function filter_bootstrap_nav_menu_css_class($classes, $item, $args)
 		}
 	}
 
+	return $classes;
+}
+
+/**
+ * Add icon to menu item title.
+ *
+ * @param string $title The menu item's title.
+ * @param WP_Post $item The menu item object.
+ * @param stdClass $args An object of wp_nav_menu() arguments.
+ * @param int $depth Depth of menu item.
+ *
+ * @return string
+ */
+add_filter('nav_menu_item_title', 'filter_sazukaru_nav_menu_item_title', 10, 4);
+function filter_sazukaru_nav_menu_item_title($title, $item, $args, $depth)
+{
+	if ($args->theme_location === 'primary-menu') {
+		$icon = get_field('icon', $item);
+		if ($icon) {
+			$title = '<img src="' . esc_url($icon) . '" alt="' . esc_attr($item->title) . '" class="menu-icon"><span>' . $title . '</span>';
+		}
+	}
+
+	return $title;
+}
+
+/**
+ * Add has-icon class to menu items with icons.
+ *
+ * @param array $classes The CSS classes that are applied to the menu item's <li> element.
+ * @param WP_Post $item The current menu item.
+ * @param stdClass $args An object of wp_nav_menu() arguments.
+ *
+ * @return array
+ */
+add_filter('nav_menu_css_class', 'filter_sazukaru_nav_menu_css_class', 15, 3);
+function filter_sazukaru_nav_menu_css_class($classes, $item, $args)
+{
+	if ($args->theme_location === 'primary-menu') {
+		$icon = get_field('icon', $item);
+		if ($icon) {
+			$classes[] = 'has-icon';
+		}
+	}
 
 	return $classes;
 }

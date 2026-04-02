@@ -7,7 +7,7 @@
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <?php wp_head(); ?>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
@@ -17,4 +17,4 @@
 
 <body id="body" <?php body_class(); ?>>
     <?php wp_body_open(); ?>
-        <?php do_action('nmc_hook_header'); ?>
+    <?php do_action('sazukaru_hook_header'); ?>

@@ -95,10 +95,10 @@
     }
 
     $(document).ready(function () {
-        initHeaderScroll();
-        initMarquee();
-        initFaqAccordion();
-        initIframeResize();
+        // initHeaderScroll();
+        // initMarquee();
+        // initFaqAccordion();
+        // initIframeResize();
         initBackToTop();
 
         AOS.init({

@@ -34,7 +34,7 @@ h1 {
     font-size: 45px;
     line-height: 1.74;
     letter-spacing: 0.06em;
-    font-family: $font-quaternary;
+    font-family: $font-primary;
 
     @media (max-width: 1199.98px) {
         font-size: 40px;
@@ -50,7 +50,7 @@ h1 {
 }
 
 h2 {
-    font-family: "Noto Serif JP", serif;
+    font-family: $font-primary;
     font-weight: 600;
     font-size: 36px;
     line-height: 1.6;
@@ -78,4 +78,10 @@ h3 {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.container-full {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
 }
