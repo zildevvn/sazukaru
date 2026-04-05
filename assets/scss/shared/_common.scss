@@ -140,3 +140,16 @@ img {
         z-index: 2;
     }
 }
+
+.s-text-primary {
+    color: $color-primary;
+}
+
+.s-heading-line {
+    border-left: 8px solid $color-primary;
+    padding-left: 10px
+}
+
+.pl-8 {
+    padding-left: 8px;
+}
