@@ -67,3 +67,35 @@ function sazukaru_post_item()
     </div>
 <?php }
 
+function sazukaru_hero_section($title = '', $sub_title = '', $image = '', $image_mb = '')
+{ ?>
+    <section class="sazukaru-section hero-section">
+        <div class="sazukaru-section__bg">
+            <img class="d-none d-md-block" src="<?= $image ?>" alt="bg-hero" />
+            <img class="d-md-none" src="<?= $image_mb ?>" alt="bg-hero-mb" />
+        </div>
+
+        <div class="container">
+            <h1 class="sazukaru-hero-section__title mb-0">
+                <?= $title ?>
+            </h1>
+            <p class="sazukaru-hero-section__sub-title mb-0">
+                <?= $sub_title ?>
+            </p>
+        </div>
+    </section>
+<?php }
+
+function sazukaru_breadcrumbs($title)
+{
+    ?>
+    <section class="breadcrumbs-section">
+        <div class="container">
+            <p class="mb-0">
+                <a href="<?= home_url() ?>">HOME</a>
+                <span>></span>
+                <?= $title ?>
+            </p>
+        </div>
+    </section>
+<?php }
