@@ -1,4 +1,6 @@
 <?php
+$program_link_1 = home_url('/program-1/');
+$program_link_2 = home_url('/program-2/');
 $programs = [
     [
         'title' => '代理出産プログラム',
@@ -9,7 +11,7 @@ $programs = [
         ',
         'image' => 'image-program-001.jpg',
         'image_mb' => 'image-program-002.png',
-        'link' => '#!',
+        'link' => $program_link_1,
     ],
     [
         'title' => '卵子ドナー提供プログラム',
@@ -20,7 +22,7 @@ $programs = [
         ',
         'image' => 'image-program-003.png',
         'image_mb' => 'image-program-004.png',
-        'link' => '#!',
+        'link' => $program_link_2,
     ]
 ]
     ?>

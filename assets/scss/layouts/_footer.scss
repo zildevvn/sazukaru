@@ -27,6 +27,16 @@
         background: transparent;
         flex-wrap: wrap;
 
+        @include media-breakpoint-down(lg) {
+            width: 40px;
+            font-size: 13.15px;
+        }
+
+        @include media-breakpoint-down(md) {
+            width: 30px;
+            font-size: 8px;
+        }
+
         &.is-visible {
             opacity: 1;
             visibility: visible;
@@ -42,6 +52,16 @@
             border-radius: 50%;
             background: $color-primary;
             margin-bottom: 12px;
+
+            @include media-breakpoint-down(lg) {
+                height: 40px;
+                margin-bottom: 8px;
+            }
+
+            @include media-breakpoint-down(md) {
+                height: 30px;
+                margin-bottom: 4px;
+            }
 
             svg {
                 width: 100%;

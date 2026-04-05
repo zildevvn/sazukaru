@@ -34,15 +34,23 @@ $partners = [
     ],
     [
         'image' => 'image-partner-009.png',
-        'heading' => 'SMART ULTRASOUND',
+        'heading' => 'GAGUA CLINIC',
     ],
     [
         'image' => 'image-partner-010.png',
-        'heading' => 'GAGUA CLINIC',
+        'heading' => 'HERA 2011',
     ],
     [
-        'image' => 'image-partner-011.png',
-        'heading' => 'GAGUA CLINIC',
+        'image' => '',
+        'heading' => 'UNIVERSY CLINIC',
+    ],
+    [
+        'image' => '',
+        'heading' => 'FERTIMEDI CLINIC',
+    ],
+    [
+        'image' => '',
+        'heading' => 'REPRO ART CLINIC',
     ],
 ]
     ?>

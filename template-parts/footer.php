@@ -9,7 +9,7 @@ $address = get_field('address', 'option');
 ?>
 
 <footer class="main-footer">
-    <button class="btn-top d-none d-md-flex align-items-center justify-content-center" type="button"
+    <button class="btn-top d-flex align-items-center justify-content-center" type="button"
         aria-label="<?php echo __('Back to top', 'nmc'); ?>">
         <div class="btn-top__icon">
             <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
