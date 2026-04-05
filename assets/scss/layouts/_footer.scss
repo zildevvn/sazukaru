@@ -3,6 +3,10 @@
     padding-top: 50px;
     position: relative;
 
+    @include media-breakpoint-down(md) {
+        padding-top: 24px;
+    }
+
     .btn-top {
         position: fixed;
         right: 23px;
@@ -18,7 +22,7 @@
         letter-spacing: 0.06em;
         font-family: $font-primary;
         font-weight: 500;
-        color: #e9aeb6;
+        color: $color-primary;
         width: 77px;
         background: transparent;
         flex-wrap: wrap;
@@ -36,7 +40,7 @@
             justify-content: center;
             align-items: center;
             border-radius: 50%;
-            background: #e9aeb6;
+            background: $color-primary;
             margin-bottom: 12px;
 
             svg {
@@ -106,6 +110,9 @@
     &-menu {
         padding-top: 30px;
 
+        @include media-breakpoint-down(md) {
+            padding-top: 0;
+        }
 
         @include media-breakpoint-up(md) {
             ul {

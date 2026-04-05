@@ -300,3 +300,20 @@ function sazukaru_get_posts_by_category($category_slug, $posts_per_page = 4, $ti
 		</div>
 	<?php endif;
 }
+
+
+function sazukaru_button($btn_text = '', $btn_link, $btn_target = '_self', $btn_class = '', $style = '')
+{
+	$classed = $style == 'secondary' ? 'is-style-secondary' : '';
+	?>
+	<a class="sazukaru-btn d-flex align-items-center gap-4 <?php echo $btn_class; ?> <?php echo $classed; ?>"
+		href="<?php echo $btn_link; ?>" target="<?php echo $btn_target; ?>">
+		<?php echo $btn_text; ?>
+
+		<?php if ($style == 'secondary'): ?>
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/btn-arrow-pink.png" alt="icon-arrow-right " />
+		<?php else: ?>
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-btn.png" alt="icon-arrow-right " />
+		<?php endif; ?>
+	</a>
+<?php }

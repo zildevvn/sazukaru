@@ -3,6 +3,10 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+#wpadminbar {
+    overflow: hidden;
+}
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 64px;
@@ -24,54 +28,77 @@ body {
     background: #fff;
     letter-spacing: 0.06em;
     --bs-body-color: $color-blue;
-    --bs-body-font-family: $font-second;
     --bs-body-font-size: 16px;
-    --bs-body-font-weight: 400;
+    --bs-body-font-weight: 500;
     --bs-body-line-height: 1.5;
-}
-
-h1 {
-    font-size: 45px;
-    line-height: 1.74;
-    letter-spacing: 0.06em;
     font-family: $font-primary;
 
-    @media (max-width: 1199.98px) {
-        font-size: 40px;
+    @media (max-width: 767.98px) {
+        font-size: 14px;
+        letter-spacing: 0.03em;
     }
+}
+
+
+
+.container {
+    max-width: 1240px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @include media-breakpoint-down(md) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 48px;
+    letter-spacing: 0.06em;
+    font-family: $font-second;
 
     @media (max-width: 1023.98px) {
         font-size: 32px;
     }
 
     @media (max-width: 767.98px) {
-        font-size: 30px;
-    }
-}
-
-h2 {
-    font-family: $font-primary;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 1.6;
-    letter-spacing: 0.18em;
-
-    @media (max-width: 1023.98px) {
-        font-size: 26px;
-    }
-
-    @media (max-width: 767.98px) {
-        font-size: 20px;
-        letter-spacing: 0.09em;
-        line-height: 37.5px;
+        font-size: 27px;
+        letter-spacing: 0.03em;
     }
 }
 
 h3 {
     font-size: 28px;
+    font-weight: 600;
+    font-family: $font-primary;
+    letter-spacing: 0.06em;
+    line-height: 1.5;
 
-    @include media-breakpoint-up(lg) {
-        font-size: 36px;
+    @media (max-width: 1023.98px) {
+        font-size: 24px;
+    }
+
+    @media (max-width: 767.98px) {
+        font-size: 16px;
+        letter-spacing: 0.03em;
+    }
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: $font-primary;
+    letter-spacing: 0.06em;
+    line-height: 1.5;
+
+    @media (max-width: 1023.98px) {
+        font-size: 20px;
+    }
+
+    @media (max-width: 767.98px) {
+        font-size: 18px;
+        letter-spacing: 0.03em;
     }
 }
 
@@ -84,4 +111,32 @@ img {
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+
+.sazukaru-section {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        z-index: 1;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    >.container {
+        position: relative;
+        z-index: 2;
+    }
 }
