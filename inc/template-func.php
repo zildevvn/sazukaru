@@ -92,7 +92,7 @@ function sazukaru_breadcrumbs($title)
     <section class="breadcrumbs-section">
         <div class="container">
             <p class="mb-0">
-                <a href="<?= home_url() ?>">HOME</a>
+                <a href="<?= home_url() ?>">ホーム</a>
                 <span>></span>
                 <?= $title ?>
             </p>
