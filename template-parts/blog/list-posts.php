@@ -1,13 +1,16 @@
 <?php
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-$args = array(
+
+$default_args = array(
     'post_type' => 'post',
     'post_status' => 'publish',
     'paged' => $paged,
     'posts_per_page' => 9,
 );
 
-$query = new WP_Query($args);
+$query_args = !empty($args) ? wp_parse_args($args, $default_args) : $default_args;
+
+$query = new WP_Query($query_args);
 
 if ($query->have_posts()): ?>
     <div class="blog-list">
@@ -32,6 +35,9 @@ if ($query->have_posts()): ?>
                     <h3 class="blog-card__title">
                         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                     </h3>
+                    <div class="blog-card__excerpt">
+                        <?php echo wp_trim_words(get_the_excerpt(), 15); ?>
+                    </div>
                     <div class="blog-card__tags">
                         <?php
                         $tags = get_the_tags();

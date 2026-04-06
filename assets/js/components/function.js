@@ -94,12 +94,76 @@
         });
     }
 
+    function initBlogFilter() {
+        const $container = $('#ajax-blog-container');
+        const $sidebarItems = $('.blog-sidebar__category-list li');
+
+        if (!$container.length || !$sidebarItems.length) return;
+
+        $sidebarItems.on('click', function (e) {
+            e.preventDefault();
+
+            const $this = $(this);
+            const categoryId = $this.data('category-id');
+
+            if ($this.hasClass('active')) return;
+
+            // Update UI Active State
+            $sidebarItems.removeClass('active');
+            $this.addClass('active');
+
+            // Update Category Name Title
+            const $heading = $('.category-name');
+            if (categoryId === 'all') {
+                $heading.text('記事一覧');
+            } else {
+                // Extract only the text node to avoid getting SVG content
+                const categoryName = $this.find('a').contents().filter(function () {
+                    return this.nodeType === 3;
+                }).text().trim();
+                $heading.text(categoryName);
+            }
+
+            // Show Loading State
+            $container.html('<div class="loading-message text-center py-5">Loading articles...</div>');
+            $container.css('opacity', '0.5');
+
+            $.ajax({
+                url: ajax_object.ajax_url,
+                type: 'POST',
+                data: {
+                    action: 'filter_blog_by_category',
+                    category_id: categoryId,
+                },
+                success: function (response) {
+                    if (response.success) {
+                        $container.html(response.data);
+                        $container.css('opacity', '1');
+                        
+                        // Scroll to top of list if needed
+                        $('html, body').animate({
+                            scrollTop: $container.offset().top - 150
+                        }, 500);
+                    } else {
+                        $container.html('<p class="text-center py-5">Error loading posts.</p>');
+                        $container.css('opacity', '1');
+                    }
+                },
+                error: function () {
+                    $container.html('<p class="text-center py-5">Request failed. Please try again.</p>');
+                    $container.css('opacity', '1');
+                }
+            });
+        });
+    }
+
     $(document).ready(function () {
         initHeaderScroll();
         // initMarquee();
         // initFaqAccordion();
         // initIframeResize();
         initBackToTop();
+        initBlogFilter();
 
         AOS.init({
             once: false
