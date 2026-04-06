@@ -26,7 +26,7 @@ $partners = [
     ],
     [
         'image' => 'image-partner-007.png',
-        'heading' => 'SMART ULTRASOUND',
+        'heading' => 'Z. SABAKHTARASHVILI CLINIC',
     ],
     [
         'image' => 'image-partner-008.png',
