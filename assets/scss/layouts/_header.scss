@@ -109,6 +109,35 @@
             }
         }
     }
+
+    &#header-scroll {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        transition: all 0.5s ease-in-out;
+        transform: translateY(-100%);
+        z-index: 99999;
+        opacity: 0;
+        visibility: hidden;
+
+        @media (max-width: 1023.98px) {
+            display: none !important;
+        }
+
+        &.is-scrolled {
+            transform: translateY(0);
+            background: rgba(255, 255, 255, 0.8);
+            // backdrop-filter: blur(10px);
+            opacity: 1;
+            visibility: visible;
+            // box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        body.logged-in & {
+            top: 32px;
+        }
+    }
 }
 
 .mobile-menu-overlay {

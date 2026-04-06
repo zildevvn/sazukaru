@@ -6675,6 +6675,31 @@ img {
 .header-main .humberger-btn.is-active span:nth-child(3) {
   transform: rotate(-45deg) translate(2px, 2px);
 }
+.header-main#header-scroll {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  transform: translateY(-100%);
+  z-index: 99999;
+  opacity: 0;
+  visibility: hidden;
+}
+@media (max-width: 1023.98px) {
+  .header-main#header-scroll {
+    display: none !important;
+  }
+}
+.header-main#header-scroll.is-scrolled {
+  transform: translateY(0);
+  background: rgba(255, 255, 255, 0.8);
+  opacity: 1;
+  visibility: visible;
+}
+body.logged-in .header-main#header-scroll {
+  top: 32px;
+}
 
 .mobile-menu-overlay {
   position: fixed;
@@ -6916,6 +6941,19 @@ body.logged-in .mobile-menu-overlay {
     padding-top: 32px;
   }
 }
+.main-footer__socials li img {
+  max-width: 51px;
+}
+@media (max-width: 1023.98px) {
+  .main-footer__socials li img {
+    max-width: 48px;
+  }
+}
+@media (max-width: 767.98px) {
+  .main-footer__socials li img {
+    max-width: 35px;
+  }
+}
 .main-footer__copyright {
   margin-top: 60px;
   font-size: 14px;
@@ -7099,7 +7137,7 @@ body.logged-in .mobile-menu-overlay {
 }
 @media (max-width: 767.98px) {
   .home .hero-section {
-    padding: 400px 0 24px 0;
+    padding: 300px 0 24px 0;
   }
 }
 .home .hero-section .sazukaru-section__bg img {

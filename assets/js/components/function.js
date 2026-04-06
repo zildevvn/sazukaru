@@ -95,7 +95,7 @@
     }
 
     $(document).ready(function () {
-        // initHeaderScroll();
+        initHeaderScroll();
         // initMarquee();
         // initFaqAccordion();
         // initIframeResize();

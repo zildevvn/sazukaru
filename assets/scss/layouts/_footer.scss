@@ -173,6 +173,20 @@
             padding-top: 32px;
 
         }
+
+        li {
+            img {
+                max-width: 51px;
+
+                @include media-breakpoint-down(lg) {
+                    max-width: 48px;
+                }
+
+                @include media-breakpoint-down(md) {
+                    max-width: 35px;
+                }
+            }
+        }
     }
 
     &__copyright {
