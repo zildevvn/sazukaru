@@ -20,35 +20,41 @@
 
                 <p>このほか複数の候補者リストから、ご夫婦にてご検討・選択いただく形となります。</p>
 
-                <div class="group">
-                    <h3>サポート体制</h3>
-                    <p class="mb-0">代理母出産を成功に導くためには、<span class="s-text-primary">医療・法務・心理面を含めた多職種連携が不可欠</span>です。</p>
-                    <p>御社では、以下の専門家と連携しながら、すべての工程を慎重かつ確実に進めていきます。</p>
-                    <ul>
-                        <li>生殖医療専門医・提携クリニック</li>
-                        <li>弁護士</li>
-                        <li>心理カウンセラー</li>
-                        <li>ナース・医療スタッフ</li>
-                        <li>その他関連専門家</li>
-                    </ul>
 
-                    <p class="mb-0">また、現地での生活面のサポートに加え、ご夫婦の精神的な安心を支える伴走型サポートにも力を入れています。</p>
-                </div>
-
-                <div class="group">
-                    <h3>ご相談について</h3>
-                    <p class="mb-0">代理出産は、ご夫婦それぞれの状況によって最適な選択が異なります。</p>
-                    <p class="mb-0">まずは現在の状況を丁寧にお伺いし、</p>
-                    <p><span class="s-text-primary">無理のない、現実的な選択肢を</span>ご提案いたします。</p>
-
-                    <p class="mb-0">どうぞお気軽にご相談ください。</p>
-                </div>
             </div>
             <div class="item-right">
 
                 <img src="<?= get_template_directory_uri() ?>/assets/images/program-1/image-program-005.jpg"
                     alt="image program 05" />
             </div>
+        </div>
+
+        <div class="list-group">
+
+            <div class="group">
+                <h3>サポート体制</h3>
+                <p class="mb-0">代理母出産を成功に導くためには、<span class="s-text-primary">医療・法務・心理面を含めた多職種連携が不可欠</span>です。</p>
+                <p>御社では、以下の専門家と連携しながら、すべての工程を慎重かつ確実に進めていきます。</p>
+                <ul>
+                    <li>生殖医療専門医・提携クリニック</li>
+                    <li>弁護士</li>
+                    <li>心理カウンセラー</li>
+                    <li>ナース・医療スタッフ</li>
+                    <li>その他関連専門家</li>
+                </ul>
+
+                <p class="mb-0">また、現地での生活面のサポートに加え、ご夫婦の精神的な安心を支える伴走型サポートにも力を入れています。</p>
+            </div>
+
+            <div class="group">
+                <h3>ご相談について</h3>
+                <p class="mb-0">代理出産は、ご夫婦それぞれの状況によって最適な選択が異なります。</p>
+                <p class="mb-0">まずは現在の状況を丁寧にお伺いし、</p>
+                <p><span class="s-text-primary">無理のない、現実的な選択肢を</span>ご提案いたします。</p>
+
+                <p class="mb-0">どうぞお気軽にご相談ください。</p>
+            </div>
+
         </div>
     </div>
 

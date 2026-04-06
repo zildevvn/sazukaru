@@ -7,6 +7,10 @@
         padding-top: 24px;
     }
 
+    ul li:before {
+        content: none
+    }
+
     .btn-top {
         position: fixed;
         right: 23px;

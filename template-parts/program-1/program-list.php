@@ -19,7 +19,7 @@ $programs = [
 <section class="sazukaru-section program-list-section">
     <div class="container">
         <div class="program-list-section-header">
-            <p class="program-list-section-header__title mb-0">プログラム一覧</p>
+            <p class="program-list-section-header__title mb-0">代理母出産プログラムとは</p>
             <span> </span>
         </div>
 
@@ -28,8 +28,8 @@ $programs = [
             <div class="program-item d-flex">
                 <div class="program-item__content">
                     <p class="mb-0">代理母出産プログラムは、</p>
-                    <p class="mb-0 s-text-primary">卵子は正常に作られているものの、子宮の状態により妊娠・出産が困難な場合に</p>
-                    <p class=""> 選択される生殖医療プログラムです。</p>
+                    <p class="br-none"><span class="s-text-primary">卵子は正常に作られているものの、子宮の状態により妊娠・出産が困難な場合</span>に <br />
+                        選択される生殖医療プログラムです。</p>
 
                     <p class="mb-0 s-heading-line">妻</p>
                     <p class="pl-8">卵子は正常だが、子宮が妊娠に適していない</p>

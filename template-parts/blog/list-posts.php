@@ -4,7 +4,7 @@ $args = array(
     'post_type' => 'post',
     'post_status' => 'publish',
     'paged' => $paged,
-    'posts_per_page' => 2,
+    'posts_per_page' => 9,
 );
 
 $query = new WP_Query($args);
