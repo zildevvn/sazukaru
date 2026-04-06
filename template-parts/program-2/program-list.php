@@ -97,7 +97,7 @@ $programs = [
                         <li>条件に応じて、日本人ドナーの選択肢のご案内も可能</li>
                     </ul>
 
-                    <p>※ 日本人ドナーの場合は、 報酬水準や渡航・滞在の必要性から、調整に時間を要する場合があります。</p>
+                    <p class="text-note">※ 日本人ドナーの場合は、 報酬水準や渡航・滞在の必要性から、調整に時間を要する場合があります。</p>
                 </div>
                 <div class="program-item__image">
                     <img src="<?= get_template_directory_uri() ?>/assets/images/program-2/image-program-2-003.jpg"

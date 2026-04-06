@@ -61,7 +61,7 @@ $list_reasons = [
                         <div class="reason-item__content d-flex align-items-center">
                             <div class="content-warp">
                                 <p class="reason-number mb-0 d-flex align-items-center justify-content-center">REASON
-                                    0<?= $index + 1 ?>
+                                    <?= $index + 1 ?>
                                 </p>
                                 <h3 class="mb-0">
                                     <?= $reason['title']; ?>
