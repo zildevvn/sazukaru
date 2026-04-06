@@ -6764,7 +6764,7 @@ body.logged-in .mobile-menu-overlay {
 .main-footer .btn-top {
   position: fixed;
   right: 23px;
-  bottom: 60px;
+  bottom: 30px;
   transition: all 0.3s ease;
   border: none;
   padding: 0;
@@ -6791,6 +6791,7 @@ body.logged-in .mobile-menu-overlay {
   .main-footer .btn-top {
     width: 30px;
     font-size: 8px;
+    bottom: 20px;
   }
 }
 .main-footer .btn-top.is-visible {
@@ -7098,7 +7099,7 @@ body.logged-in .mobile-menu-overlay {
 }
 @media (max-width: 767.98px) {
   .home .hero-section {
-    padding: 400px 0 40px 0;
+    padding: 400px 0 24px 0;
   }
 }
 .home .hero-section .sazukaru-section__bg img {
@@ -7106,6 +7107,7 @@ body.logged-in .mobile-menu-overlay {
 }
 .home .hero-section h1, .home .hero-section .h1 {
   margin: 0;
+  text-align: left;
 }
 .home .hero-section h1 p, .home .hero-section .h1 p {
   background: #ffffff;

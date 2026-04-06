@@ -14,8 +14,9 @@
                     テキストテキストテキストテキストテキストテストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
                 </p>
 
+                <?php $link = home_url('/about/') ?>
 
-                <?php sazukaru_button('詳細はこちら', '#', '_self', ''); ?>
+                <?php sazukaru_button('詳細はこちら', $link, '_self', ''); ?>
             </div>
             <div class="about-section-content__image">
                 <img class="d-none d-md-block" src="<?= get_template_directory_uri(); ?>/assets/images/image-about.png"

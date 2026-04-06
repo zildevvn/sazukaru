@@ -10,7 +10,7 @@
     .btn-top {
         position: fixed;
         right: 23px;
-        bottom: 60px;
+        bottom: 30px;
         transition: $transition-base;
         border: none;
         padding: 0;
@@ -35,6 +35,7 @@
         @include media-breakpoint-down(md) {
             width: 30px;
             font-size: 8px;
+            bottom: 20px;
         }
 
         &.is-visible {

@@ -11,7 +11,7 @@
         }
 
         @include media-breakpoint-down(md) {
-            padding: 400px 0 40px 0;
+            padding: 400px 0 24px 0;
         }
 
         .sazukaru-section__bg img {
@@ -20,6 +20,7 @@
 
         h1 {
             margin: 0;
+            text-align: left;
             // display: flex;
             // max-width: fit-content;
             // flex-wrap: wrap;
