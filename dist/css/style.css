@@ -8900,6 +8900,100 @@ body.page-template-about-template .content-section-main .container p:last-child 
   background-color: rgba(233, 174, 182, 0.1);
 }
 
+.news-content-section {
+  padding-top: 60px;
+  padding-bottom: 110px;
+}
+@media (max-width: 767.98px) {
+  .news-content-section {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+}
+.news-content-section .news-list {
+  border-top: 1px solid #eaeaea;
+}
+.news-content-section .news-item {
+  border-bottom: 1px solid #eaeaea;
+  transition: all 0.3s ease;
+}
+.news-content-section .news-item:hover {
+  background-color: rgba(233, 174, 182, 0.05);
+}
+.news-content-section .news-item:hover .news-item__title {
+  color: #e9aeb6;
+}
+.news-content-section .news-item.featured {
+  background-color: rgba(233, 174, 182, 0.05);
+}
+.news-content-section .news-item__wrapper {
+  display: flex;
+  align-items: baseline;
+  padding: 30px 15px;
+  text-decoration: none !important;
+  color: inherit;
+  gap: 50px;
+}
+@media (max-width: 1023.98px) {
+  .news-content-section .news-item__wrapper {
+    gap: 30px;
+  }
+}
+@media (max-width: 767.98px) {
+  .news-content-section .news-item__wrapper {
+    padding: 15px 10px;
+    gap: 10px;
+    flex-direction: column;
+  }
+}
+.news-content-section .news-item__date {
+  font-family: "Lato", sans-serif;
+  color: #e9aeb6;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
+  min-width: 120px;
+}
+@media (max-width: 767.98px) {
+  .news-content-section .news-item__date {
+    font-size: 14px;
+    min-width: auto;
+    margin-bottom: 5px;
+  }
+}
+.news-content-section .news-item__content {
+  flex: 1;
+  width: 100%;
+}
+.news-content-section .news-item__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #555;
+  font-family: "Noto Sans JP", sans-serif;
+  transition: color 0.3s ease;
+}
+@media (max-width: 1023.98px) {
+  .news-content-section .news-item__title {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767.98px) {
+  .news-content-section .news-item__title {
+    font-size: 14px;
+  }
+}
+.news-content-section .blog-pagination {
+  margin-top: 60px;
+}
+@media (max-width: 767.98px) {
+  .news-content-section .blog-pagination {
+    margin-top: 30px;
+  }
+}
+
 .page-template-program-1-template .program-list-section {
   padding-bottom: 76px;
 }

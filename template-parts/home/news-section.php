@@ -1,7 +1,7 @@
 <section class="sazukaru-section new-section">
     <div class="container">
         <div class="new-section-content d-flex align-items-center">
-            <?php $link = home_url('/blog/') ?>
+            <?php $link = home_url('/news/') ?>
             <a href="<?= $link ?>">
                 <img class="d-none d-md-block"
                     src="<?= get_template_directory_uri(); ?>/assets/images/image-new-home.png" alt="bg-hero" />
@@ -12,20 +12,20 @@
             <?php
             $latest_posts = get_posts(array(
                 'posts_per_page' => 1,
-                'post_status'    => 'publish',
+                'post_status' => 'publish',
             ));
 
-            if ($latest_posts) :
+            if ($latest_posts):
                 global $post;
-                foreach ($latest_posts as $post) :
+                foreach ($latest_posts as $post):
                     setup_postdata($post);
-            ?>
-                <p class="mb-0">
-                    <a href="<?php the_permalink(); ?>" class="text-white text-decoration-none">
-                        <span><?php echo get_the_date('Y-m-d'); ?></span> <?php the_title(); ?>
-                    </a>
-                </p>
-            <?php
+                    ?>
+                    <p class="mb-0">
+                        <a href="<?php the_permalink(); ?>" class="text-white text-decoration-none">
+                            <span><?php echo get_the_date('Y-m-d'); ?></span> <?php the_title(); ?>
+                        </a>
+                    </p>
+                    <?php
                 endforeach;
                 wp_reset_postdata();
             endif;
