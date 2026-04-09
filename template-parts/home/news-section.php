@@ -13,6 +13,7 @@
             $latest_posts = get_posts(array(
                 'posts_per_page' => 1,
                 'post_status' => 'publish',
+                'post_type' => 'news',
             ));
 
             if ($latest_posts):
