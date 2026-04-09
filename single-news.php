@@ -8,7 +8,7 @@
 get_header();
 ?>
 <div class="single-post-page">
-    <?php get_template_part('template-parts/news/breadcrumbs-section'); ?>
+    <?php get_template_part('template-parts/news/breadcrumbs-single-section'); ?>
     <main id="primary" class="site-main article-main">
 
         <?php
