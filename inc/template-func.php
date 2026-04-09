@@ -99,3 +99,17 @@ function sazukaru_breadcrumbs($title)
         </div>
     </section>
 <?php }
+
+function sazukaru_breadcrumbs_news($title)
+{
+    ?>
+    <section class="breadcrumbs-section">
+        <div class="container">
+            <p class="mb-0">
+                <a href="<?= home_url('/news') ?>">ニュース一覧</a>
+                <span>></span>
+                <?= $title ?>
+            </p>
+        </div>
+    </section>
+<?php }

@@ -1,4 +1,4 @@
 <?php
-$title = 'お知らせ';
-sazukaru_breadcrumbs($title);
+$title = get_the_title();
+sazukaru_breadcrumbs_news($title);
 ?>
