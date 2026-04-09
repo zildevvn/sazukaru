@@ -8,7 +8,37 @@ if (!function_exists('sazukaru_create_custom_post_type')) {
 	function sazukaru_create_custom_post_type()
 	{
 
-
+		register_post_type('news', array(
+			'labels' => array(
+				'name' => __('ニュース'),
+				'singular_name' => __('ニュース'),
+				'add_new' => __('新規追加'),
+				'add_new_item' => __('ニュースを追加'),
+				'edit_item' => __('ニュースを編集'),
+				'new_item' => __('新しいニュース'),
+				'view_item' => __('ニュースを表示'),
+				'search_items' => __('ニュースを検索'),
+				'not_found' => __('ニュースが見つかりません'),
+				'not_found_in_trash' => __('ゴミ箱にニュースはありません'),
+				'all_items' => __('すべてのニュース'),
+				'menu_name' => __('ニュース'),
+			),
+			'label' => __('ニュース', 'sazukaru'),
+			'supports' => array('title', 'thumbnail', 'revisions', 'page-attributes'),
+			'menu_icon' => 'dashicons-admin-generic',
+			'hierarchical' => false,
+			'public' => true,
+			'show_ui' => true,
+			'show_in_menu' => true,
+			'menu_position' => 5,
+			'show_in_admin_bar' => true,
+			'show_in_nav_menus' => true,
+			'can_export' => true,
+			'has_archive' => false,
+			'exclude_from_search' => false,
+			'publicly_queryable' => false,
+			'show_in_rest' => true,
+		));
 
 
 	}
