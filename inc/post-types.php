@@ -24,7 +24,7 @@ if (!function_exists('sazukaru_create_custom_post_type')) {
 				'menu_name' => __('ニュース'),
 			),
 			'label' => __('ニュース', 'sazukaru'),
-			'supports' => array('title', 'thumbnail', 'revisions', 'page-attributes'),
+			'supports' => array('title', 'editor', 'thumbnail', 'revisions', 'page-attributes'),
 			'menu_icon' => 'dashicons-admin-generic',
 			'hierarchical' => false,
 			'public' => true,
@@ -36,7 +36,7 @@ if (!function_exists('sazukaru_create_custom_post_type')) {
 			'can_export' => true,
 			'has_archive' => false,
 			'exclude_from_search' => false,
-			'publicly_queryable' => false,
+			'publicly_queryable' => true,
 			'show_in_rest' => true,
 		));
 
