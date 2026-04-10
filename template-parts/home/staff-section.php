@@ -15,10 +15,10 @@
             <div class="staff-section-warp">
                 <h3>ケテヴァン・ロバキゼ医師 </h3>
                 <p class="sub-heading h3">医学博士／産科・婦人科専門医</p>
-                <p class="mb-0">Juno Surrogacy</p>
-                <p>（旧称：International Surrogacy and Donation Agency）の創設者兼ディレクターである
+         
+                <p>Juno Surrogacy（旧称：International Surrogacy and Donation Agency）の創設者兼ディレクターである
                     ケテヴァン・ロバキゼ医師は、長年にわたり数多くの人々の人生に深く関わってきた、経験豊富な産科・婦人科医です。</p>
-                <p>トビリシ国立医科大学医学部を卒業後、モスクワにて博士論文を完成させ、**医学博士（Academic Doctor of Medicine）**の学位を取得しました。</p>
+                <p>トビリシ国立医科大学医学部を卒業後、モスクワにて博士論文を完成させ、医学博士（Academic Doctor of Medicine）の学位を取得しました。</p>
                 <p>また、「保健機関（Health Organization）」および「産婦人科・周産期医学（Gynaecology and Perinatal
                     Medicine）」の資格証明を取得し、ジョージア共和国名誉医師としてメダルを授与されています。</p>
                 <p>これまでに 37本の学術論文を含む多数の研究成果を発表。</p>

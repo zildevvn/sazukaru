@@ -2,7 +2,7 @@
 $list_reasons = [
     [
         'title' => '正式提携クリニックによる「安心できる医療品質」',
-        'description' => 'dairiboやmedi-bridgesは複数クリニックのネットワーク提供であるのに対し、御社はJuno Surrogacyと',
+        'description' => 'dairiboやmedi-bridgesは複数クリニックのネットワーク提供であるのに対し、弊社はJuno Surrogacyと“独自の提携契約”を締結しています。',
         'image' => 'image-resoon-001.jpg',
         'image_mb' => 'image-resoon-003.png',
         'content' => '
@@ -19,7 +19,7 @@ $list_reasons = [
     ],
     [
         'title' => '国籍別法務・リスク評価を“事前に可視化”',
-        'description' => '代理出産は国籍・法制度により手続・帰国の難易度が大きく異なります。 御社は、',
+        'description' => '代理出産は国籍・法制度により手続・帰国の難易度が大きく異なります。 弊社は、',
         'image' => 'image-resoon-002.jpg',
         'image_mb' => 'image-resoon-004.png',
         'content' => '
